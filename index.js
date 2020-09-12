@@ -34,9 +34,11 @@ function newGame(input) {
                 }
             }
         }
-        var loadOut = array[Math.floor(Math.random() * array.length)];
+        var weaponOne = array[Math.floor(Math.random() * array.length)];
+        var weaponTwo = array[Math.floor(Math.random() * array.length)];
+        var loadOut = [weaponOne, weaponTwo,];
         console.clear();
-        console.log(loadOut);
+        console.log('Your load out is the ' + weaponOne + ' and the ' + weaponTwo);
         document.getElementById("Load Out").innerHTML=loadOut;
 }
 
