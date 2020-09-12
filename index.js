@@ -27,15 +27,19 @@ var item = {
 
 function newGame(input) {
     var array = [];
-        for(var item in input) {
-            if(input.hasOwnProperty(item) ) {
-                for(var i=0; i<input[item]; i++ ) {
-                    array.push(item);
+        for(var gun in input) {
+            if(input.hasOwnProperty(gun) ) {
+                for(var i=0; i<input[gun]; i++ ) {
+                    array.push(gun);
                 }
             }
         }
-        return array[Math.floor(Math.random() * array.length)];
+        var loadOut = array[Math.floor(Math.random() * array.length)];
+        console.clear();
+        console.log(loadOut);
+        document.getElementById("Load Out").innerHTML=loadOut;
 }
 
-console.log(newGame(item));
-console.log(newGame(item));
+function start() {   
+    newGame(gun)
+}
