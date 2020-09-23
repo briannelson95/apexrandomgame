@@ -169,4 +169,24 @@ var weaponArray = [
     },
 ]
 
+var primaryLength = weaponArray.length;
+//primary
+var randomPrimaryNumber = Math.floor(Math.random() * primaryLength) + 0;
+var randomPrimary = weaponArray[randomPrimaryNumber];
 
+console.log("The random primary is -------" + randomPrimaryNumber);
+console.log("The name is -------" + randomPrimary.name);
+console.log("The Image is ------" + randomPrimary.image);
+
+document.getElementById;
+document.getElementById;
+document.getElementById;
+
+var secondaryLength = weaponArray.length;
+//primary
+var randomSecondaryNumber = Math.floor(Math.random() * secondaryLength) + 0;
+var randomSecondary = weaponArray[randomSecondaryNumber];
+
+console.log("The random secondary is -------" + randomSecondaryNumber);
+console.log("The name is -------" + randomSecondary.name);
+console.log("The Image is -------" + randomSecondary.image);
