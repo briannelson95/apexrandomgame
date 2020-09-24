@@ -190,3 +190,101 @@ var randomSecondary = weaponArray[randomSecondaryNumber];
 console.log("The random secondary is -------" + randomSecondaryNumber);
 console.log("The name is -------" + randomSecondary.name);
 console.log("The Image is -------" + randomSecondary.image);
+
+//Call to Weapons
+
+if (randomPrimary.name == "Flatline") {
+    flatline();
+}
+
+if (randomPrimary.name == "G7 Scout") {
+    g7scout();
+}
+
+if (randomPrimary.name == "Hemlock") {
+    hemlock();
+}
+
+if (randomPrimary.name == "R-301 Carbine") {
+    r301();
+}
+
+if (randomPrimary.name == "HAVOC") {
+    havoc();
+}
+
+if (randomPrimary.name == "Alternator") {
+    alternator();
+}
+
+if (randomPrimary.name == "Prowler") {
+    prowler();
+}
+
+if (randomPrimary.name == "Volt SMG") {
+    volt(); 
+}
+
+if (randomPrimary.name == "Devotion") {
+    devotion();
+}
+
+if (randomPrimary.name == "Spitfire") {
+    spitfire();
+}
+
+if (randomPrimary.name == "L-Star") {
+    lStar();
+}
+
+if (randomPrimary.name == "Longbow") {
+    longbow();
+}
+
+if (randomPrimary.name == "Triple Take") {
+    tripleTake();
+}
+
+if (randomPrimary.name == "Sentinel") {
+    sentinel();
+}
+
+if (randomPrimary.name == "Charged Rifle") {
+    chargeRifle();
+}
+
+if (randomPrimary.name == "EVA-8") {
+    eva8();
+}
+
+if (randomPrimary.name == "Mastiff") {
+    mastiff();
+}
+
+if (randomPrimary.name == "Mozabique") {
+    mozambique();
+}
+
+if (randomPrimary.name == "RE-45") {
+    re45();
+}
+
+if (randomPrimary.name == "P2020") {
+    p2020();
+}
+
+if (randomPrimary.name == "Wingman") {
+    wingman();
+}
+
+if (randomPrimary.name == "R-99") {
+    r99();
+}
+
+if (randomPrimary.name = "Kraber") {
+    kraber();
+}
+
+if (randomPrimary.name == "Peacekeeper") {
+    peacekeeper();
+}
