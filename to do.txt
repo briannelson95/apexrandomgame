@@ -1,0 +1,22 @@
+to do
+
+    finish weapons code = done
+
+    images of weapons = done 
+    images of hop-ups
+    images of optics
+
+    link images to weapons = done
+    link images to attachments
+
+    create primary and secondary array = done
+    run fuctions if "x" is called
+        this is complete, code not responding to second page of functions
+
+    UI HTML to put the outcome on the page = working
+
+    add roll legend again = done
+
+ideas
+    in weaponsArray, remove individual lendary weapons, replace with "heirloom"
+        run if "heirloom" then 1 of these 3

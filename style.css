@@ -1,0 +1,56 @@
+
+body {
+    background-color: #e2dad2;
+}
+
+.column {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: 000000;
+}
+
+.button {
+background-color: #b32f3a;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button2 {
+    background-color: #b32f3a;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.border {
+    border: 4px solid #000000;
+}
