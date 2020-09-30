@@ -1,52 +1,4 @@
-var gun = {
-    'Flatline':10,
-    'G7 Scout':10,
-    'Hemlock':10,
-    'R-301 Carbine':10,
-    'HAVOC':10,
-    'Alternator':10,
-    'Volt SMG':10,
-    'Devotion':10,
-    'Spitfire':10,
-    'L-Star':10,
-    'Longbow':10,
-    'Triple Take':10,
-    'Charge Rifle':10,
-    'Sentinal':10,
-    'EVA 8':10,
-    'Mozabique':10,
-    'RE-45':10,
-    'P2020':10,
-    'Wingman':10, 
-    'Mastiff':10,
-    'Prowler':10,
-    'Kraber':1,
-    'Peacekeeper':2,
-    'R-99':3,
-    'Fists':4,
-}
-
-function newGame(input) {
-    var array = [];
-        for(var gun in input) {
-            if(input.hasOwnProperty(gun) ) {
-                for(var i=0; i<input[gun]; i++ ) {
-                    array.push(gun);
-                }
-            }
-        }
-        var weaponOne = array[Math.floor(Math.random() * array.length)];
-        var weaponTwo = array[Math.floor(Math.random() * array.length)];
-        var loadOut = [weaponOne, weaponTwo,];
-        console.clear();
-        console.log('Your load out is the ' + weaponOne + ' and the ' + weaponTwo);
-        document.getElementById("Load Out").innerHTML=loadOut;
-}
-
-function start() {   
-    newGame(gun)
-}
-
+////Game In Progress
 var weaponArray = [
     {
         name: 'Flatline',
@@ -54,6 +6,7 @@ var weaponArray = [
         weight: 10
     },
     {
+        
         name: 'G7 Scout',
         image: 'weapons/g7scout.png',
         weight: 10
@@ -84,7 +37,7 @@ var weaponArray = [
     },
     {
         name: "R-99",
-        image: 'weapons/r99',
+        image: 'weapons/r99.png',
         weight: 1
     },
     {
@@ -166,125 +119,207 @@ var weaponArray = [
         name: "Wingman",
         image: 'weapons/wingman.png',
         weight: 10
-    },
+    }
+   
 ]
 
-var primaryLength = weaponArray.length;
-//primary
-var randomPrimaryNumber = Math.floor(Math.random() * primaryLength) + 0;
-var randomPrimary = weaponArray[randomPrimaryNumber];
+var legendArray = [
+    {
+        name: 'Bangalore',
+        image: 'legends/bangalore.jpg'
+    },
+    {
+        name: 'Bloodhound',
+        image: 'legends/bloodhound.jpg'
+    },
+    {
+        name: 'Caustic',
+        image: 'legends/caustic.jpg'
+    },
+    {
+        name: 'Crypto',
+        image: 'legends/crypto.jpg'
+    },
+    {
+        name: 'Gibraltar',
+        image: 'legends/gibraltar.jpg'
+    },
+    {
+        name: 'Lifeline',
+        image: 'legends/lifeline.jpg'
+    },
+    {
+        name: 'Loba',
+        image: 'legends/loba.jpg'
+    },
+    {
+        name: 'Mirage',
+        image: 'legends/mirage.jpg'
+    },
+    {
+        name: 'Octane',
+        image: 'legends/octane.jpg'
+    },
+    {
+        name: 'Pathfinder',
+        image: 'legends/pathfinder.jpg'
+    },
+    {
+        name: 'Rampart',
+        image: 'legends/rampart.jpg'
+    },
+    {
+        name: 'Revenant',
+        image: 'legends/revenant.jpg'
+    },
+    {
+        name: 'Wattson',
+        image: 'legends/wattson.jpg'
+    },
+    {
+        name: 'Wraith',
+        image: 'legends/wraith.jpg'
+    }
+]
 
-console.log("The random primary is -------" + randomPrimaryNumber);
-console.log("The name is -------" + randomPrimary.name);
-console.log("The Image is ------" + randomPrimary.image);
+function finalWeapon() {
 
-document.getElementById;
-document.getElementById;
-document.getElementById;
+    var primaryLength = weaponArray.length;
+    //primary
+    var randomPrimaryNumber = Math.floor(Math.random() * primaryLength) + 0;
+    var randomPrimary = weaponArray[randomPrimaryNumber];
 
-var secondaryLength = weaponArray.length;
-//primary
-var randomSecondaryNumber = Math.floor(Math.random() * secondaryLength) + 0;
-var randomSecondary = weaponArray[randomSecondaryNumber];
+    //console.log("The random primary is -------" + randomPrimaryNumber);
+    //console.log("The name is -------" + randomPrimary.name);
+    //console.log("The Image is ------" + randomPrimary.image);
 
-console.log("The random secondary is -------" + randomSecondaryNumber);
-console.log("The name is -------" + randomSecondary.name);
-console.log("The Image is -------" + randomSecondary.image);
+    document.getElementById("weapon1").innerHTML = '<b>' + randomPrimary.name + '</b>' + '<br>' + '<img style="height:75px;" src="' + randomPrimary.image + '">';
 
-//Call to Weapons
+    var secondaryLength = weaponArray.length;
+    //primary
+    var randomSecondaryNumber = Math.floor(Math.random() * secondaryLength) + 0;
+    var randomSecondary = weaponArray[randomSecondaryNumber];
 
-if (randomPrimary.name == "Flatline") {
-    flatline();
+    //console.log("The random secondary is -------" + randomSecondaryNumber);
+    //console.log("The name is -------" + randomSecondary.name);
+    //console.log("The Image is -------" + randomSecondary.image);
+
+    document.getElementById("weapon2").innerHTML = '<b>' + randomSecondary.name + '</b>' + '<br>' + '<img style="height:75px;" src="' + randomSecondary.image + '">';
+
+    var legendLength = legendArray.length;
+
+    var randomLegendNumber = Math.floor(Math.random() * legendLength) + 0;
+    var randomLegend = legendArray[randomLegendNumber];
+
+    document.getElementById("legend").innerHTML = '<b>' + randomLegend.name + '</b>' + '<br>' + '<img style="height:200px;" src="' + randomLegend.image + '" class="border">';
+
+////Call to weapons.js
+/*
+    if (randomPrimary.name == "Flatline") {
+        flatline();
+    }
+*/
 }
 
-if (randomPrimary.name == "G7 Scout") {
-    g7scout();
+function rollLegend() {
+    var legendLength = legendArray.length;
+
+    var randomLegendNumber = Math.floor(Math.random() * legendLength) + 0;
+    var randomLegend = legendArray[randomLegendNumber];
+
+    document.getElementById("legend").innerHTML = '<b>' + randomLegend.name + '</b>' + '<br>' + '<img style="height:200px;" src="' + randomLegend.image + '" class="border">';
+
 }
 
-if (randomPrimary.name == "Hemlock") {
-    hemlock();
+////Old Game, no longer in use
+
+/* var gun = {
+    'Flatline':10,
+    'G7 Scout':10,
+    'Hemlock':10,
+    'R-301 Carbine':10,
+    'HAVOC':10,
+    'Alternator':10,
+    'Volt SMG':10,
+    'Devotion':10,
+    'Spitfire':10,
+    'L-Star':10,
+    'Longbow':10,
+    'Triple Take':10,
+    'Charge Rifle':10,
+    'Sentinel':10,
+    'EVA 8':10,
+    'Mozabique':10,
+    'RE-45':10,
+    'P2020':10,
+    'Wingman':10, 
+    'Mastiff':10,
+    'Prowler':10,
+    'Kraber':1,
+    'Peacekeeper':2,
+    'R-99':3,
+    'Fists':4,
 }
 
-if (randomPrimary.name == "R-301 Carbine") {
-    r301();
+var legend= {
+    'Bloodhound':10,
+    'Bangalore':10,
+    'Caustic':10,
+    'Crypto':10,
+    'Gibralter':10,
+    'Lifeline':10,
+    'Loba':10,
+    'Mirage':10,
+    'Octane':10,
+    'Pathfinder':10,
+    'Rampart':10,
+    'Revenant':10,
+    'Wattson':10,
+    'Wraith':10
 }
 
-if (randomPrimary.name == "HAVOC") {
-    havoc();
+function newGame(input) {
+    var array = [];
+        for(var weaponArray in input) {
+            if(input.hasOwnProperty(weaponArray) ) {
+                for(var i=0; i<input[weaponArray]; i++ ) {
+                    array.push(weaponArray);
+                }
+            }
+        }
+        var weaponOne = array[Math.floor(Math.random() * array.length)];
+        var weaponTwo = array[Math.floor(Math.random() * array.length)];
+
+        if 
+        //var loadOut = [weaponOne, weaponTwo,];
+        //console.clear();
+        //console.log('Your load out is the ' + weaponOne + ' and the ' + weaponTwo);
+        //document.getElementById("Load Out").innerHTML=loadOut;
+        document.getElementById("weapon1").innerHTML=weaponOne;
+        document.getElementById("weapon2").innerHTML=weaponTwo;
 }
 
-if (randomPrimary.name == "Alternator") {
-    alternator();
+function start() {   
+    newGame(gun)
 }
 
-if (randomPrimary.name == "Prowler") {
-    prowler();
+
+////Added legends
+function legendGame(input) {
+    var array = [];
+        for(var legend in input) {
+            if(input.hasOwnProperty(legend) ) {
+                for(var i=0; i<input[legend]; i++ ) {
+                    array.push(legend);
+                }
+            }
+        }
+        var legendOne = array[Math.floor(Math.random() * array.length)];
+
+        document.getElementById("Legend").innerHTML=legendOne;
 }
 
-if (randomPrimary.name == "Volt SMG") {
-    volt(); 
+function legendPick() {
+    legendGame(legend)
 }
-
-if (randomPrimary.name == "Devotion") {
-    devotion();
-}
-
-if (randomPrimary.name == "Spitfire") {
-    spitfire();
-}
-
-if (randomPrimary.name == "L-Star") {
-    lStar();
-}
-
-if (randomPrimary.name == "Longbow") {
-    longbow();
-}
-
-if (randomPrimary.name == "Triple Take") {
-    tripleTake();
-}
-
-if (randomPrimary.name == "Sentinel") {
-    sentinel();
-}
-
-if (randomPrimary.name == "Charged Rifle") {
-    chargeRifle();
-}
-
-if (randomPrimary.name == "EVA-8") {
-    eva8();
-}
-
-if (randomPrimary.name == "Mastiff") {
-    mastiff();
-}
-
-if (randomPrimary.name == "Mozabique") {
-    mozambique();
-}
-
-if (randomPrimary.name == "RE-45") {
-    re45();
-}
-
-if (randomPrimary.name == "P2020") {
-    p2020();
-}
-
-if (randomPrimary.name == "Wingman") {
-    wingman();
-}
-
-if (randomPrimary.name == "R-99") {
-    r99();
-}
-
-if (randomPrimary.name = "Kraber") {
-    kraber();
-}
-
-if (randomPrimary.name == "Peacekeeper") {
-    peacekeeper();
-}
+*/
