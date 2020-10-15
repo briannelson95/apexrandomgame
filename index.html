@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180540750-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180540750-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-180540750-1');
-</script>
+      gtag('config', 'UA-180540750-1');
+  </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script data-ad-client="ca-pub-7196765036909193" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="index.js"></script>
-    <title>Loadout Randomizer</title>
+    <title>Apex Randomizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <center>
-    <h1>Apex Legends Randomizer</h1> 
-  
+    <a href="index.html" class="button5"><h1>Apex Legends Randomizer</h1></a>
+  <br>
     <button class="button" onclick="finalWeapon();">Generate Loadout</button>
 
     <br>
@@ -33,7 +33,7 @@
     <div class="card">
       
       <div id="para1">
-        <div class="firstcolumn">
+        <div class="col-1">
         <h2>Intended Play</h2>
         <p>The intended way to play is to generate a loadout (and/or) legend. As you drop into a match of APEX Legends, you can use any weapons you find until you are able to use the loadout that was generated.</p>
 
@@ -46,6 +46,7 @@
           <li>Disabled Sentinel</li>
           <li>Fixed R-301 in Secondary</li>
           <li>Added Featured Content Section</li>
+          <li>Better optimization for mobile</li>
         </ul>
 
         <h2>Idea Inspiration</h2>
@@ -56,17 +57,17 @@
         </center>
             <br>
         </div>
-        <div class="secondcoulmn">
+        <div class="col-2">
           <center><h2>Featured Content</h2></center>
           <p>Want your content featured here? <a href="mailto:apexrandomizer@gmail.com">apexrandomizer@gmail.com</a>
           <br>
-          <center><a href="mailto:apexrandomizer@gmail.com" class="button4">Contact Me</a></center></p>
-          <iframe width="455" height="246" src="https://www.youtube.com/embed/kOdUHB8aLr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p></p>
+            <center><a href="mailto:apexrandomizer@gmail.com" class="button4">Contact Me</a></p>
+          <iframe class="video" width="455" height="246" src="https://www.youtube.com/embed/kOdUHB8aLr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </p></center>
         </div>
       </div>
     <div class="row">
-      <div class="column">
+      <div class="col-3">
 
           <div id="weapon1"> </div>
             <h3 id="primaryH3"></h3>
@@ -79,7 +80,7 @@
                 <div id="primaryAtt4"></div>
                 <div id="primaryAtt5"></div>
       </div>
-      <div class="column">
+      <div class="col-3">
             <div id="weapon2"> </div>
               <h3 id="secondaryH3"></h3>
                 <div id="secondary"></div>
@@ -91,7 +92,7 @@
                   <div id="secondaryAtt4"></div>
                   <div id="secondaryAtt5"></div>
       </div>
-      <div class="column">
+      <div class="col-3">
           <div id="legend"> </div>
       </div> 
         <script src="weapons.js"></script>

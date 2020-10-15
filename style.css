@@ -8,6 +8,18 @@ body {
     font-family: helvetica;
 }
 
+@media (max-width: 600px) {
+body {
+    background-color: #e2dad2;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 500%;
+    font-family: helvetica;
+}
+}
+
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 90%;
@@ -16,13 +28,14 @@ body {
     text-align: center;
 }
 
+
 .container {
     padding: 10px 16px;
     height: fit-content;
 }
 
 
-.column {
+.col-3 {
     float: left;
     width: 30%;
     padding: 15px;
@@ -124,16 +137,22 @@ h1 {
     box-shadow: 0 0 0 4px #cbd6ee;
 }
 
-.firstcolumn {
-    width: 55%;
+.col-1 {
+    width: 50%;
     padding: 0 20px 0 0;
     float: left;
 }
 
-.secondcolumn {
+.col-2 {
     width: 45%;
     padding: 0 20px 0 0;
     float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+    }
 }
 
 .button4 {
@@ -157,3 +176,20 @@ h1 {
 .button4:focus {
     outline: none;
     box-shadow: 0 0 0 4px #eecbcb;
+}
+
+@media only screen and (max-width: 600px) {
+    [class*="video"] {
+        height: auto;
+        width: auto;
+    }
+}
+
+.button5 {
+    border: none;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
