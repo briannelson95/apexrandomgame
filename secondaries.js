@@ -1,7 +1,7 @@
 ////Code referenced from Blake Riding, UGJA on GitHub. 
 
-document.getElementById("primary").innerHTML = " ";
-function flatline() {
+document.getElementById("secondary").innerHTML = " ";
+function flatlineSecond() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 5) + 0;
@@ -44,8 +44,8 @@ function flatline() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt1").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt1").innerHTML = " ";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -57,8 +57,8 @@ function flatline() {
 
         var opticPick = optics[ranOptic];
         //console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = " ";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = " ";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -78,11 +78,8 @@ function flatline() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt2").innerHTML = " ";
-    
-    //document.getElementById("secondaryAttH2").innerHTML = " ";
-    //document.getElementById("secondaryAtt1").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt2").innerHTML = " ";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -94,11 +91,8 @@ function flatline() {
 
         var magPick = mags[ranMag];
         //console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = " ";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
-    
-        //document.getElementById("secondaryAttH2").innerHTML = " ";
-        //document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = " ";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     
     }
 
@@ -119,8 +113,8 @@ function flatline() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -132,19 +126,19 @@ function flatline() {
 
         var stockPick = standardStocks[ranStock];
         //console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = " ";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = " ";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 
 }
 
-function g7Scout() {
+function g7ScoutSecond() {
     var numAttachments = [0, 1, 2, 3, 4];
     var totalCount = 5;
     var ran = Math.floor(Math.random() * 5) + 0;
@@ -185,8 +179,8 @@ function g7Scout() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -198,8 +192,8 @@ function g7Scout() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = " ";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -219,8 +213,8 @@ function g7Scout() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -232,8 +226,8 @@ function g7Scout() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -253,8 +247,8 @@ function g7Scout() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -266,8 +260,8 @@ function g7Scout() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -291,8 +285,8 @@ function g7Scout() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -304,8 +298,8 @@ function g7Scout() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
     var hopUps = [{
@@ -315,8 +309,8 @@ function g7Scout() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(4)) {
         hopUp = true;
@@ -328,13 +322,13 @@ function g7Scout() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 
 }
 
-function hemlock() {
+function hemlockSecond() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -377,8 +371,8 @@ function hemlock() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryyAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -390,8 +384,8 @@ function hemlock() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -411,8 +405,8 @@ function hemlock() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -424,8 +418,8 @@ function hemlock() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -445,8 +439,8 @@ function hemlock() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -458,8 +452,8 @@ function hemlock() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -483,8 +477,8 @@ function hemlock() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -496,15 +490,15 @@ function hemlock() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function r301() {
+function r301Second() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -547,8 +541,8 @@ function r301() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -560,8 +554,8 @@ function r301() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -581,8 +575,8 @@ function r301() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -594,8 +588,8 @@ function r301() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -615,8 +609,8 @@ function r301() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -628,8 +622,8 @@ function r301() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -653,8 +647,8 @@ function r301() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -666,15 +660,15 @@ function r301() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function havoc() {
+function havocSecond() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -717,8 +711,8 @@ function havoc() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -730,8 +724,8 @@ function havoc() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -751,8 +745,8 @@ function havoc() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -764,8 +758,8 @@ function havoc() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -785,8 +779,8 @@ function havoc() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -798,12 +792,12 @@ function havoc() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
     //hop-ups
 
@@ -818,8 +812,8 @@ function havoc() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(3)) {
         hopUp = true;
@@ -831,14 +825,14 @@ function havoc() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 }
 
 ////SMG Weapons
 
-function alternator() {
+function alternatorSecond() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -875,8 +869,8 @@ function alternator() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -888,8 +882,8 @@ function alternator() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
 
@@ -910,8 +904,8 @@ function alternator() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -923,8 +917,8 @@ function alternator() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -944,8 +938,8 @@ function alternator() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -957,8 +951,8 @@ function alternator() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -982,8 +976,8 @@ function alternator() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -995,15 +989,15 @@ function alternator() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function prowler() {
+function prowlerSecond() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -1040,8 +1034,8 @@ function prowler() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -1053,8 +1047,8 @@ function prowler() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
      //Mags
@@ -1074,8 +1068,8 @@ function prowler() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -1087,8 +1081,8 @@ function prowler() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -1108,8 +1102,8 @@ function prowler() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -1121,12 +1115,12 @@ function prowler() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
     //hop-ups
 
@@ -1137,8 +1131,8 @@ function prowler() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(3)) {
         hopUp = true;
@@ -1150,12 +1144,12 @@ function prowler() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 }
 
-function volt() {
+function voltSecond() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -1192,8 +1186,8 @@ function volt() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -1205,8 +1199,8 @@ function volt() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
      //Mags
@@ -1226,8 +1220,8 @@ function volt() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -1239,8 +1233,8 @@ function volt() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -1260,8 +1254,8 @@ function volt() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -1273,8 +1267,8 @@ function volt() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -1298,8 +1292,8 @@ function volt() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -1311,17 +1305,17 @@ function volt() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
 ////Light Machine Guns
 
-function devotion() {
+function devotionSecond() {
     var numAttachments = [0, 1, 2, 3, 4];
     var totalCount = 5;
     var ran = Math.floor(Math.random() * 5) + 0;
@@ -1362,8 +1356,8 @@ function devotion() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -1375,8 +1369,8 @@ function devotion() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //mags
@@ -1396,8 +1390,8 @@ function devotion() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -1409,8 +1403,8 @@ function devotion() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -1430,8 +1424,8 @@ function devotion() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -1443,8 +1437,8 @@ function devotion() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -1468,8 +1462,8 @@ function devotion() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -1481,8 +1475,8 @@ function devotion() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
     //hop-ups
@@ -1494,8 +1488,8 @@ function devotion() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(4)) {
         hopUp = true;
@@ -1507,13 +1501,13 @@ function devotion() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 
 }
 
-function spitfire() {
+function spitfireSecond() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -1554,8 +1548,8 @@ function spitfire() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -1567,8 +1561,8 @@ function spitfire() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //mags
@@ -1588,8 +1582,8 @@ function spitfire() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -1601,8 +1595,8 @@ function spitfire() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -1622,8 +1616,8 @@ function spitfire() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -1635,8 +1629,8 @@ function spitfire() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -1660,8 +1654,8 @@ function spitfire() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -1673,15 +1667,15 @@ function spitfire() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function lStar() {
+function lStarSecond() {
     var numAttachments = [0, 1];
     var totalCount = 2;
     var ran = Math.floor(Math.random() * 2) + 0;
@@ -1722,8 +1716,8 @@ function lStar() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -1735,12 +1729,12 @@ function lStar() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt2").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt2").innerHTML = " ";
 
     //Stocks
 
@@ -1759,8 +1753,8 @@ function lStar() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(1)) {
         stock = true;
@@ -1772,20 +1766,20 @@ function lStar() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
 ////Snipers
 
-function longbow() {
+function longbowSecond() {
     var numAttachments = [0, 1, 2, 3, 4];
     var totalCount = 5;
     var ran = Math.floor(Math.random() * 5) + 0;
@@ -1838,8 +1832,8 @@ function longbow() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -1851,8 +1845,8 @@ function longbow() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //mags
@@ -1872,8 +1866,8 @@ function longbow() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -1885,8 +1879,8 @@ function longbow() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -1906,8 +1900,8 @@ function longbow() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -1919,8 +1913,8 @@ function longbow() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Sniper Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Sniper Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
     //Barrel Stabilizer
@@ -1944,8 +1938,8 @@ function longbow() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
         barrelMod = true;
@@ -1957,8 +1951,8 @@ function longbow() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
     //hop-ups
@@ -1970,8 +1964,8 @@ function longbow() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(4)) {
         hopUp = true;
@@ -1983,12 +1977,12 @@ function longbow() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 }
 
-function tripleTake() {
+function tripleTakeSecond() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2041,8 +2035,8 @@ function tripleTake() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2054,8 +2048,8 @@ function tripleTake() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //mags
@@ -2075,8 +2069,8 @@ function tripleTake() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -2088,8 +2082,8 @@ function tripleTake() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -2109,8 +2103,8 @@ function tripleTake() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -2122,18 +2116,18 @@ function tripleTake() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function sentinel() {
+function sentinelSecond() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2186,8 +2180,8 @@ function sentinel() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2199,8 +2193,8 @@ function sentinel() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //mags
@@ -2220,8 +2214,8 @@ function sentinel() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -2233,8 +2227,8 @@ function sentinel() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
     //Stocks
@@ -2254,8 +2248,8 @@ function sentinel() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(2)) {
         stock = true;
@@ -2267,18 +2261,18 @@ function sentinel() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function chargeRifle() {
+function chargeRifleSecond() {
     var numAttachments = [0, 1];
     var totalCount = 2;
     var ran = Math.floor(Math.random() * 2) + 0;
@@ -2331,8 +2325,8 @@ function chargeRifle() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2344,12 +2338,12 @@ function chargeRifle() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt2").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt2").innerHTML = " ";
 
     //Stocks
 
@@ -2368,8 +2362,8 @@ function chargeRifle() {
     ];
 
     var stock = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt3").innerHTML = "";
 
     if (attArr.includes(1)) {
         stock = true;
@@ -2381,18 +2375,18 @@ function chargeRifle() {
 
         var stockPick = standardStocks[ranStock];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function eva8() {
+function eva8Second() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2429,8 +2423,8 @@ function eva8() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2442,8 +2436,8 @@ function eva8() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //shotgun bolt
@@ -2463,8 +2457,8 @@ function eva8() {
     ];
 
     var bolt = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         bolt = true;
@@ -2476,15 +2470,15 @@ function eva8() {
 
         var boltPick = bolts[ranBolt];
         ////console.log(boltPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Shot-gun Bolt - " + '</b>' + boltPick.name + '<br>' + '<img style="width:50px;" src="' + boltPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Shot-gun Bolt - " + '</b>' + boltPick.name + '<br>' + '<img style="width:50px;" src="' + boltPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
     //hop-ups
 
@@ -2495,8 +2489,8 @@ function eva8() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(2)) {
         hopUp = true;
@@ -2508,12 +2502,12 @@ function eva8() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 }
 
-function mastiff() {
+function mastiffSecond() {
     var numAttachments = [0, 1];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2550,8 +2544,8 @@ function mastiff() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2563,8 +2557,8 @@ function mastiff() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //shotgun bolt
@@ -2584,8 +2578,8 @@ function mastiff() {
     ];
 
     var bolt = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         bolt = true;
@@ -2597,21 +2591,21 @@ function mastiff() {
 
         var boltPick = bolts[ranBolt];
         ////console.log(boltPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Shot-gun Bolt - " + '</b>' + boltPick.name + '<br>' + '<img style="width:50px;" src="' + boltPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Shot-gun Bolt - " + '</b>' + boltPick.name + '<br>' + '<img style="width:50px;" src="' + boltPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function mozambique() {
+function mozambiqueSecond() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2648,8 +2642,8 @@ function mozambique() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2661,8 +2655,8 @@ function mozambique() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //shotgun bolt
@@ -2682,8 +2676,8 @@ function mozambique() {
     ];
 
     var bolt = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         bolt = true;
@@ -2695,15 +2689,15 @@ function mozambique() {
 
         var boltPick = bolts[ranBolt];
         ////console.log(boltPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Shot-gun Bolt - " + '</b>' + boltPick.name + '<br>' + '<img style="width:50px;" src="' + boltPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Shot-gun Bolt - " + '</b>' + boltPick.name + '<br>' + '<img style="width:50px;" src="' + boltPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
     //hop-ups
 
@@ -2714,8 +2708,8 @@ function mozambique() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(2)) {
         hopUp = true;
@@ -2727,14 +2721,14 @@ function mozambique() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 }
 
 ////pistols
 
-function re45() {
+function re45Second() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2771,8 +2765,8 @@ function re45() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2784,8 +2778,8 @@ function re45() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -2805,8 +2799,8 @@ function re45() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -2818,12 +2812,12 @@ function re45() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
     //Barrel Stabilizer
 
@@ -2846,8 +2840,8 @@ function re45() {
     ];
 
     var barrelMod = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(2)) {
         barrelMod = true;
@@ -2859,15 +2853,15 @@ function re45() {
 
         var barrelPick = barrelMods[ranBarrel];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabibilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabibilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function p2020() {
+function p2020Second() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -2904,8 +2898,8 @@ function p2020() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -2917,8 +2911,8 @@ function p2020() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -2938,8 +2932,8 @@ function p2020() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -2951,15 +2945,15 @@ function p2020() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
     //hop-ups
 
@@ -2970,8 +2964,8 @@ function p2020() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(2)) {
         hopUp = true;
@@ -2983,12 +2977,12 @@ function p2020() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
 }
 
-function wingman() {
+function wingmanSecond() {
     var numAttachments = [0, 1, 2];
     var totalCount = 3;
     var ran = Math.floor(Math.random() * 3) + 0;
@@ -3025,8 +3019,8 @@ function wingman() {
     ];
 
     var optic = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt1").innerHTML = "";
 
     if (attArr.includes(0)) {
         optic = true;
@@ -3038,8 +3032,8 @@ function wingman() {
 
         var opticPick = optics[ranOptic];
         ////console.log(opticPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
     //Mags
@@ -3059,8 +3053,8 @@ function wingman() {
     ];
 
     var mag = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt2").innerHTML = "";
 
     if (attArr.includes(1)) {
         mag = true;
@@ -3072,15 +3066,15 @@ function wingman() {
 
         var magPick = mags[ranMag];
         ////console.log(magPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt3").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt3").innerHTML = " ";
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt4").innerHTML = " ";
 
     //hop-ups
 
@@ -3091,8 +3085,8 @@ function wingman() {
     ];
 
     var hopUp = false;
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
 
     if (attArr.includes(2)) {
         hopUp = true;
@@ -3104,59 +3098,7 @@ function wingman() {
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
-        document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
     }
-}
-
-
-function r99() {
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = " ";
-}
-
-function kraber() {
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = " ";
-}
-
-function peacekeeper() {
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt1").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt2").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt3").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt4").innerHTML = " ";
-
-    document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = " ";
 }

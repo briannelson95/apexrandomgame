@@ -1,56 +1,159 @@
 
 body {
     background-color: #e2dad2;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 110%;
+    font-family: helvetica;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    width: 90%;
+    opacity: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.container {
+    padding: 10px 16px;
+    height: fit-content;
+}
+
 
 .column {
-    column-count: 2;
-    column-gap: 20px;
-    padding: 20px;
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
     float: left;
+    width: 30%;
+    padding: 15px;
 }
 
-li a {
-    display: block;
-    padding: 8px;
-    background-color: 000000;
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+.columnright {
+    float: right;
+    width: 30%;
+    padding: 8px;
+}
+
 
 .button {
-background-color: #b32f3a;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    background-color: #b32f3a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #8d1717;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #eecbcb;
 }
 
 .button2 {
     background-color: #b32f3a;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2:hover {
+    background: #8d1717;
+}
+
+.button2:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #eecbcb;
 }
 
 .border {
     border: 4px solid #000000;
 }
+
+h1 {
+    
+    color: white;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black
+}
+
+#para1 {
+    text-align: left;
+    padding: 15px;
+    padding-left: 40px;
+}
+
+.button3 {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.button3:hover {
+    background: #1d49aa;
+}
+  
+.button3:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.firstcolumn {
+    width: 55%;
+    padding: 0 20px 0 0;
+    float: left;
+}
+
+.secondcolumn {
+    width: 45%;
+    padding: 0 20px 0 0;
+    float: right;
+}
+
+.button4 {
+    background-color: #b32f3a;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button4:hover {
+    background: #8d1717;
+}
+
+.button4:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #eecbcb;
