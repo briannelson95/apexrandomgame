@@ -1,39 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-180540750-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-180540750-1');
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script data-ad-client="ca-pub-7196765036909193" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script src="index.js"></script>
     <title>Loadout Randomizer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <center><h1>Apex Legends Randomizer</h1> 
+  <center>
+    <h1>Apex Legends Randomizer</h1> 
   
     <button class="button" onclick="finalWeapon();">Generate Loadout</button>
 
     <br>
-
-    <button class="button2" onclick="rollLegend();">Reroll Legend</button>
-
-    <div class="column">
-      <div id="weapon1">Weapon 1</div>
-
-      <div id="weapon2">Weapon 2</div>
+    <div id="newbutton">
+      <!--<button class="button2" onclick="rollLegend();">Reroll Legend</button>-->
     </div>
-
-    <br>
-
-    <div class="column"></div>
-      <div id="legend">Legend</div>
-    </div>
+    <div class="card">
       
+      <div id="para1">
+        <div class="firstcolumn">
+        <h2>Intended Play</h2>
+        <p>The intended way to play is to generate a loadout (and/or) legend. As you drop into a match of APEX Legends, you can use any weapons you find until you are able to use the loadout that was generated.</p>
+
+        <p>Tested an alternate way to play, in which players were not allowed to use any other weapons than those that were generated. This means we could only fight with our fists, as you can imagine this was fairly difficult and in my opinion, made the challenge not fun at all. So take that for what it is and choose how you wish to play.</p>
+
+        <h2>Updates</h2>
+        <ul>
+          <li>Enabled Heirloom Weapons</li>
+          <li>Removed Heirloom Weapons from Secondary Pick</li>
+          <li>Disabled Sentinel</li>
+          <li>Fixed R-301 in Secondary</li>
+          <li>Added Featured Content Section</li>
+        </ul>
+
+        <h2>Idea Inspiration</h2>
+        <p>I was inspired to create this application after watching some streamers playing Call of Duty: Modern Warfare Warzone. I looked into the creator's (UJGA) GitHub. I'm very new to javascript coding but had enough knowledge to read through and understand what his code was doing. I started writing my own scripts and referencing their code.</p>
+        <center>
+            <p>Check out the MW Class Generator</p>
+            <a href="https://mwrandomclass.com/" target="_blank" class="button3">MWClassGenerator</a>
+        </center>
+            <br>
+        </div>
+        <div class="secondcoulmn">
+          <center><h2>Featured Content</h2></center>
+          <p>Want your content featured here? <a href="mailto:apexrandomizer@gmail.com">apexrandomizer@gmail.com</a>
+          <br>
+          <center><a href="mailto:apexrandomizer@gmail.com" class="button4">Contact Me</a></center></p>
+          <iframe width="455" height="246" src="https://www.youtube.com/embed/kOdUHB8aLr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p></p>
+        </div>
+      </div>
+    <div class="row">
+      <div class="column">
+
+          <div id="weapon1"> </div>
+            <h3 id="primaryH3"></h3>
+              <div id="primary"></div>
+                <h3 id="primaryAttH3"></h3>
+                <h2 id="primaryAttH2"></h2>
+                <div id="primaryAtt1"></div>
+                <div id="primaryAtt2"></div>
+                <div id="primaryAtt3"></div>
+                <div id="primaryAtt4"></div>
+                <div id="primaryAtt5"></div>
+      </div>
+      <div class="column">
+            <div id="weapon2"> </div>
+              <h3 id="secondaryH3"></h3>
+                <div id="secondary"></div>
+                  <h3 id="secondaryAttH3"></h3>
+                  <h2 id="secondaryAttH2"></h2>
+                  <div id="secondaryAtt1"></div>
+                  <div id="secondaryAtt2"></div>
+                  <div id="secondaryAtt3"></div>
+                  <div id="secondaryAtt4"></div>
+                  <div id="secondaryAtt5"></div>
+      </div>
+      <div class="column">
+          <div id="legend"> </div>
+      </div> 
+        <script src="weapons.js"></script>
+        <script src="secondaries.js"></script>
+      </div>
+    </div>
+        <br>
+          
+      </div>
+    </div>  
   </center>
-  
-
-
-
+<!--Photos have been sourced from other websites, including https://apexlegends.gamepedia.com/Apex_Legends_Wiki and https://titanfall.fandom.com/wiki/Weapon_attachments_(Apex_Legends) and https://www.forbes.com/sites/insertcoin/2019/02/24/the-names-of-11-leaked-apex-legends-characters-may-reveal-their-abilities/#1f8453a4b400 -->
 </body>
 </html>
