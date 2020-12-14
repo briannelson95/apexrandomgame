@@ -11,59 +11,134 @@
       gtag('config', 'UA-180540750-1');
   </script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script data-ad-client="ca-pub-7196765036909193" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script src="index.js"></script>
-    <title>Apex Randomizer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="Apex Randomizer, an all in one random generator for Apex Legends. Updated for Season 7, Randomize weapons, attachemnts, legends and drop zones.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="apex, legends, randomizer, apex legends, apex legends randomizer, apex randomizer, random challenge">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Social Media-->
+    <meta property="og:title" content="Apex Randomizer">
+    <meta property="og:description" content="Randomize weapons, attachments, legends and drop zones.">
+    <meta property="og:image" content="social-preview.png">
+    <meta property="og:url" content="http://apexrandomizer.com/">
+    
+    <meta property="twitter:title" content="Apex Randomizer">
+    <meta property="twitter:description" content="Randomize weapons, attachments, legends and drop zones.">
+    <meta property="twitter:image" content="social-preview.png">
+    <meta property="twitter:card" content="summary_large_image">
+
+  <script src="index.js"></script>
+  <title>Apex Randomizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  
 </head>
 <body>
+<!--
+  <div id="popUpMain" style="display: none;">
+    <div id="popup">
+      <h1 id="newsHeading">Join Our Tournament</h1>
+      <a href="https://briannelsonfilms.com" target="_blank"><button class="buttonNews">More Info</button></a>
+      <button class="buttonNews">No Thanks</button>
+    </div>
+  </div>
+-->
+
+  <header>
+    <a href="index.html"><img class="logo" src="logo2.png" height="60px" alt="Apex Randomizer Logo"></a>
+    <nav>
+    </nav>
+    <a class="cta" href="contact.html"><button class="button4">Contact</button></a>
+  </header>
 
   <center>
-    <a href="index.html" class="button5"><h1>Apex Legends Randomizer</h1></a>
   <br>
-    <button class="button" onclick="finalWeapon();">Generate Loadout</button>
 
+    <button class="button" onclick="finalWeapon();">Generate Loadout</button>
+    
     <br>
     <div id="newbutton">
       <!--<button class="button2" onclick="rollLegend();">Reroll Legend</button>-->
     </div>
+
+    <!--<p style="color: white;">-->
+      <!--<input name="radioButton" type="radio" value="1"> Kings Canyon-->
+      <input name="radioButton" type="radio" value="2"> Worlds Edge
+      <input name="radioButton" type="radio" value="3"> Olympus
+    
+
     <div class="card">
       
       <div id="para1">
         <div class="col-1">
-        <h2>Intended Play</h2>
-        <p>The intended way to play is to generate a loadout (and/or) legend. As you drop into a match of APEX Legends, you can use any weapons you find until you are able to use the loadout that was generated.</p>
+          <h2>Apex Randomizer</h2>
+            <p>Updated for Season 7, add an extra challenge to your games of Apex Legends with the Apex Randomizer. Use this to generate two random weaponds with compatible attachments, legend and drop zones. The intended way to use the Apex Randomizer is by genetating a loadout and as you drop into a game, you can use any weapons you find <u>until</u> you find the weapons that have been assigned to you. </p>
 
-        <p>Tested an alternate way to play, in which players were not allowed to use any other weapons than those that were generated. This means we could only fight with our fists, as you can imagine this was fairly difficult and in my opinion, made the challenge not fun at all. So take that for what it is and choose how you wish to play.</p>
+               
 
-        <h2>Updates</h2>
-        <ul>
-          <li>Enabled Heirloom Weapons</li>
-          <li>Removed Heirloom Weapons from Secondary Pick</li>
-          <li>Disabled Sentinel</li>
-          <li>Fixed R-301 in Secondary</li>
-          <li>Added Featured Content Section</li>
-          <li>Better optimization for mobile</li>
-        </ul>
+          <h2>Updates</h2>
+            <ul>
+              <li>
+                <div class="dropdown">
+                  <button onmouseover="myFunction()" onmouseout="myFunction()" class="dropbtn">Updates for Season 7</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <ul>
+                      <li>Reenabled Worlds Edge</li>
+                        <li>Updated background image</li>
+                        <li>Added Olympus map and POI's</li>
+                        <li>Added Legend: Horizon</li>
+                        <li>Moved R-99 back to floor loot.</li>
+                        <li>Move Prowler to care package</li>
+                        <li>Added hop-up Quickdraw Holster to RE-45 and Wingman</li>
+                        <li>Disabled World's Edge</li>
+                        <li>Vaulted Kings Canyon</li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li>Updated logo image</li>
+              <!--<li>Added Information about Tournamnet
+                <ul><a href="#link"  style="color:initial"><li>&gt;Tournament Info Here&lt;</li></a></ul>
+              </li>-->
+              <li>Condensed Season 7 Updates to dropdown menu</li>
+              <li>Removed "Featured Content", added Twitter Feed</li>
+              
+            </ul>
+            <a href="https://www.ea.com/games/apex-legends/news/ascension-patch-notes">Read the full patch notes here.</a>
 
-        <h2>Idea Inspiration</h2>
-        <p>I was inspired to create this application after watching some streamers playing Call of Duty: Modern Warfare Warzone. I looked into the creator's (UJGA) GitHub. I'm very new to javascript coding but had enough knowledge to read through and understand what his code was doing. I started writing my own scripts and referencing their code.</p>
-        <center>
-            <p>Check out the MW Class Generator</p>
-            <a href="https://mwrandomclass.com/" target="_blank" class="button3">MWClassGenerator</a>
-        </center>
+            <p>If you would like to support the maintenance and updates of this site please consider donating.</p>
+          <center>
+            <form action="https://www.paypal.com/donate" method="post" target="_blank">
+              <input type="hidden" name="cmd" value="_donations" />
+              <input type="hidden" name="business" value="FW3NQFLTVCEMC" />
+              <input type="hidden" name="item_name" value="Upkeep and updates of website to stay ad free." />
+              <input type="hidden" name="currency_code" value="USD" />
+              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+              <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+              </form>
+          </center> 
+
+          <h2>Idea Inspiration</h2>
+            <p>I was inspired to create this application after watching some streamers playing Call of Duty: Modern Warfare Warzone. I looked into the creator's (UJGA) GitHub. I'm very new to javascript coding but had enough knowledge to read through and understand what his code was doing. I started writing my own scripts and referencing their code.</p>
+            <center>
+              <p>Check out the MW Class Generator</p>
+              <a href="https://mwrandomclass.com/" target="_blank" class="button3">MWClassGenerator</a>
+            </center>
             <br>
         </div>
+
         <div class="col-2">
-          <center><h2>Featured Content</h2></center>
+        <center>
+          <!--<h2>Featured Content</h2>
           <p>Want your content featured here? <a href="mailto:apexrandomizer@gmail.com">apexrandomizer@gmail.com</a>
           <br>
-            <center><a href="mailto:apexrandomizer@gmail.com" class="button4">Contact Me</a></p>
+          <br>
           <iframe class="video" width="455" height="246" src="https://www.youtube.com/embed/kOdUHB8aLr8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </p></center>
+          </p>-->
+          <a href="https://twitter.com/intent/tweet?screen_name=apexrandomizer&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @apexrandomizer</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a class="twitter-timeline" data-lang="en" data-width="90%" data-height="900" href="https://twitter.com/ApexRandomizer?ref_src=twsrc%5Etfw">Tweets by ApexRandomizer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </center>
         </div>
       </div>
     <div class="row">
@@ -94,9 +169,17 @@
       </div>
       <div class="col-3">
           <div id="legend"> </div>
-      </div> 
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="col-4">
+        <div id="map"></div>
+      </div>
+    
         <script src="weapons.js"></script>
         <script src="secondaries.js"></script>
+        <script src="maps.js"></script>
       </div>
     </div>
         <br>
@@ -105,5 +188,45 @@
     </div>  
   </center>
 <!--Photos have been sourced from other websites, including https://apexlegends.gamepedia.com/Apex_Legends_Wiki and https://titanfall.fandom.com/wiki/Weapon_attachments_(Apex_Legends) and https://www.forbes.com/sites/insertcoin/2019/02/24/the-names-of-11-leaked-apex-legends-characters-may-reveal-their-abilities/#1f8453a4b400 -->
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+  
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+<script>
+  $(document).ready(function() {
+  if (!sessionStorage.getItem('popupPreviouslyShown') || false) {
+    setTimeout(function() {
+      $('#popUpMain').css('display', 'block');
+      sessionStorage.setItem('popupPreviouslyShown', true);
+    }, 3000);
+  }
+});
+
+  $('.buttonNews').click(function(){
+    $('#popUpMain').css('display', 'none')
+  });
+</script>
+
 </body>
 </html>

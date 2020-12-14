@@ -31,13 +31,13 @@ var weaponArray = [
         weight: 10
     },
     {
-        name: "Prowler",
-        image: 'weapons/prowler.png',
+        name: "R-99",
+        image: 'weapons/r99.png',
         weight: 10
     },
     {
-        name: "R-99",
-        image: 'weapons/r99.png',
+        name: "Prowler",
+        image: 'weapons/prowler.png',
         weight: 1
     },
     {
@@ -75,11 +75,11 @@ var weaponArray = [
         image: 'weapons/tripletake.png',
         weight: 10
     },
-/*    {
+    {
         name: "Sentinel",
         image: 'weapons/sentinel.png',
         weight: 10
-    },*/
+    },
     {
         name: "Charge Rifle",
         image: 'weapons/chargerifle.png',
@@ -151,8 +151,8 @@ var weaponArray = [
         weight: 10
     },
     {
-        name: "Prowler",
-        image: 'weapons/prowler.png',
+        name: "R-99",
+        image: 'weapons/r99.png',
         weight: 10
     },
     {
@@ -185,11 +185,11 @@ var weaponArray = [
         image: 'weapons/tripletake.png',
         weight: 10
     },
-/*    {
+    {
         name: "Sentinel",
         image: 'weapons/sentinel.png',
         weight: 10
-    },*/
+    },
     {
         name: "Charge Rifle",
         image: 'weapons/chargerifle.png',
@@ -259,8 +259,8 @@ var weaponArray2 = [
         weight: 10
     },
     {
-        name: "Prowler",
-        image: 'weapons/prowler.png',
+        name: "R-99",
+        image: 'weapons/r99.png',
         weight: 10
     },
     {
@@ -293,11 +293,11 @@ var weaponArray2 = [
         image: 'weapons/tripletake.png',
         weight: 10
     },
-/*    {
+    {
         name: "Sentinel",
         image: 'weapons/sentinel.png',
         weight: 10
-    },*/
+    },
     {
         name: "Charge Rifle",
         image: 'weapons/chargerifle.png',
@@ -405,6 +405,11 @@ var legendArray = [
         name: 'Wraith',
         image: 'legends/wraith.jpg',
         weight: 10
+    },
+    {
+        name: 'Horizon',
+        image: 'legends/horizon.jpg',
+        weight: 10
     }
 ];
 
@@ -443,6 +448,13 @@ function finalWeapon() {
     var randomLegend = legendArray[randomLegendNumber];
 
     document.getElementById("legend").innerHTML = '<b>' + randomLegend.name + '</b>' + '<br>' + '<img style="height:175px;" src="' + randomLegend.image + '" class="border">';
+
+////Map Choice
+    switch ($(":radio[name=radioButton]:checked").val()) { 
+        case "1": kingsCanyon(); break; 
+        case "2": worldsEdge(); break; 
+        case "3": olympus(); break; 
+    }
 
 ////Call to weapons.js
 
@@ -568,8 +580,8 @@ function finalWeapon() {
         alternatorSecond();
     }
 
-    if (randomSecondary.name == "Prowler") {
-        prowlerSecond();
+    if (randomSecondary.name == "R-99") {
+        r99Second();
     }
 
     if (randomSecondary.name == "Volt SMG") {
@@ -639,96 +651,3 @@ function rollLegend() {
     document.getElementById("legend").innerHTML = '<b>' + randomLegend.name + '</b>' + '<br>' + '<img style="height:150px;" src="' + randomLegend.image + '" class="border">';
 
 }
-
-////Old Game, no longer in use
-
-/* var gun = {
-    'Flatline':10,
-    'G7 Scout':10,
-    'Hemlock':10,
-    'R-301 Carbine':10,
-    'HAVOC':10,
-    'Alternator':10,
-    'Volt SMG':10,
-    'Devotion':10,
-    'Spitfire':10,
-    'L-Star':10,
-    'Longbow':10,
-    'Triple Take':10,
-    'Charge Rifle':10,
-    'Sentinel':10,
-    'EVA 8':10,
-    'Mozabique':10,
-    'RE-45':10,
-    'P2020':10,
-    'Wingman':10, 
-    'Mastiff':10,
-    'Prowler':10,
-    'Kraber':1,
-    'Peacekeeper':2,
-    'R-99':3,
-    'Fists':4,
-}
-
-var legend= {
-    'Bloodhound':10,
-    'Bangalore':10,
-    'Caustic':10,
-    'Crypto':10,
-    'Gibralter':10,
-    'Lifeline':10,
-    'Loba':10,
-    'Mirage':10,
-    'Octane':10,
-    'Pathfinder':10,
-    'Rampart':10,
-    'Revenant':10,
-    'Wattson':10,
-    'Wraith':10
-}
-
-function newGame(input) {
-    var array = [];
-        for(var weaponArray in input) {
-            if(input.hasOwnProperty(weaponArray) ) {
-                for(var i=0; i<input[weaponArray]; i++ ) {
-                    array.push(weaponArray);
-                }
-            }
-        }
-        var weaponOne = array[Math.floor(Math.random() * array.length)];
-        var weaponTwo = array[Math.floor(Math.random() * array.length)];
-
-        if 
-        //var loadOut = [weaponOne, weaponTwo,];
-        //console.clear();
-        //console.log('Your load out is the ' + weaponOne + ' and the ' + weaponTwo);
-        //document.getElementById("Load Out").innerHTML=loadOut;
-        document.getElementById("weapon1").innerHTML=weaponOne;
-        document.getElementById("weapon2").innerHTML=weaponTwo;
-}
-
-function start() {   
-    newGame(gun)
-}
-
-
-////Added legends
-function legendGame(input) {
-    var array = [];
-        for(var legend in input) {
-            if(input.hasOwnProperty(legend) ) {
-                for(var i=0; i<input[legend]; i++ ) {
-                    array.push(legend);
-                }
-            }
-        }
-        var legendOne = array[Math.floor(Math.random() * array.length)];
-
-        document.getElementById("Legend").innerHTML=legendOne;
-}
-
-function legendPick() {
-    legendGame(legend)
-}
-*/

@@ -1003,7 +1003,7 @@ function alternator() {
     document.getElementById("primaryAtt5").innerHTML = " ";
 }
 
-function prowler() {
+function r99() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -1057,19 +1057,20 @@ function prowler() {
         document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
-     //Mags
 
-    var mags = [{
-        name: 'Extended Heavy Mag Lvl 1',
-        image: 'attachments/heavy_mag.png'
+    //Mags
+
+     var mags = [{
+        name: 'Extended Light Mag Lvl 1',
+        image: 'attachments/light_mag.png'
     },
     {
-        name: 'Extended Heavy Mag Lvl 2',
-        image: 'attachments/heavy_mag.png'
+        name: 'Extended Light Mag Lvl 2',
+        image: 'attachments/light_mag.png'
     },
     {
-        name: 'Extended Heavy Mag Lvl 3',
-        image: 'attachments/heavy_mag.png'
+        name: 'Extended Light Mag Lvl 3',
+        image: 'attachments/light_mag.png'
     }
     ];
 
@@ -1125,34 +1126,46 @@ function prowler() {
         document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt4").innerHTML = " ";
+    //Barrel Stabilizer
 
-    //hop-ups
-
-    var hopUps = [{
-        name: 'Select Fire',
-        image:'attachments/selectfire.png'
+    var barrelMods = [{
+        name: 'Barrel Stabilizer Lvl 1',
+        image: 'attachments/stabilizer.png'
+    },
+    {
+        name: 'Barrel Stabilizer Lvl 2',
+        image: 'attachments/stabilizer.png'
+    },
+    {
+        name: 'Barrel Stabilizer Lvl 3',
+        image: 'attachments/stabilizer.png'
+    },
+    {
+        name: 'Barrel Stabilizer Lvl 4',
+        image: 'attachments/stabilizer.png'
     }
     ];
 
-    var hopUp = false;
+    var barrelMod = false;
     document.getElementById("primaryAttH2").innerHTML = "";
-    document.getElementById("primaryAtt5").innerHTML = "";
+    document.getElementById("primaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
-        hopUp = true;
-        ////console.log("HopUp is True");
+        barrelMod = true;
+        ////console.log("Optics is true");
     }
 
-    if (hopUp != false) {
-        var ranHopUp = Math.floor(Math.random() * 1) + 0;
+    if (barrelMod != false) {
+        var ranBarrel = Math.floor(Math.random() * 4) + 0;
 
-        var hopUpPick = hopUps[ranHopUp];
-        ////console.log(hopUpPick.name);
+        var barrelPick = barrelMods[ranBarrel];
+        ////console.log(opticPick.name);
         document.getElementById("primaryAttH2").innerHTML = "";
-        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
+
+    document.getElementById("primaryAttH2").innerHTML = " ";
+    document.getElementById("primaryAtt5").innerHTML = " ";
 }
 
 function volt() {
@@ -2735,9 +2748,9 @@ function mozambique() {
 ////pistols
 
 function re45() {
-    var numAttachments = [0, 1, 2];
-    var totalCount = 3;
-    var ran = Math.floor(Math.random() * 3) + 0;
+    var numAttachments = [0, 1, 2, 3];
+    var totalCount = 4;
+    var ran = Math.floor(Math.random() * 4) + 0;
     var attArr = [];
     for (var i = 0; i <= ran; i++) {
         var rand = numAttachments[Math.floor(Math.random() * totalCount)];
@@ -2863,8 +2876,31 @@ function re45() {
         document.getElementById("primaryAtt4").innerHTML = '<b>' + "Barrel Stabibilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("primaryAttH2").innerHTML = " ";
-    document.getElementById("primaryAtt5").innerHTML = " ";
+    //hop-ups
+
+    var hopUps = [{
+        name: 'Quickdraw Holster',
+        image: 'attachments/quickdraw.png'
+    }
+    ];
+
+    var hopUp = false;
+    document.getElementById("primaryAttH2").innerHTML = "";
+    document.getElementById("primaryAtt5").innerHTML = "";
+
+    if (attArr.includes(3)) {
+        hopUp = true;
+        ////console.log("HopUp is True");
+    }
+
+    if (hopUp != false) {
+        var ranHopUp = Math.floor(Math.random() * 1) + 0;
+
+        var hopUpPick = hopUps[ranHopUp];
+        ////console.log(hopUpPick.name);
+        document.getElementById("primaryAttH2").innerHTML = "";
+        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+    }
 }
 
 function p2020() {
@@ -3087,6 +3123,10 @@ function wingman() {
     var hopUps = [{
         name: 'Skullpiercer',
         image: 'attachments/skullpiercer.png'
+    },
+    {
+        name: 'Quickdraw Holster',
+        image: 'attachments/quickdraw.png'
     }
     ];
 
@@ -3100,7 +3140,7 @@ function wingman() {
     }
 
     if (hopUp != false) {
-        var ranHopUp = Math.floor(Math.random() * 1) + 0;
+        var ranHopUp = Math.floor(Math.random() * 2) + 0;
 
         var hopUpPick = hopUps[ranHopUp];
         ////console.log(hopUpPick.name);
@@ -3109,8 +3149,8 @@ function wingman() {
     }
 }
 
+function prowler() {
 
-function r99() {
     document.getElementById("primaryAttH2").innerHTML = "";
     document.getElementById("primaryAtt1").innerHTML = " ";
 
@@ -3125,6 +3165,156 @@ function r99() {
 
     document.getElementById("primaryAttH2").innerHTML = "";
     document.getElementById("primaryAtt5").innerHTML = " ";
+
+    /*var numAttachments = [0, 1, 2, 3];
+    var totalCount = 4;
+    var ran = Math.floor(Math.random() * 4) + 0;
+    var attArr = [];
+    for (var i = 0; i <= ran; i++) {
+        var rand = numAttachments[Math.floor(Math.random() * totalCount)];
+        attArr.push(rand);
+        numAttachments.splice(rand, 1);
+        totalCount--;
+    }
+
+    //Optics
+
+    var optics = [{
+        name: '1x HCOG',
+        image: 'attachments/1xhcog.png'
+    },
+    {
+        name: '2x HCOG',
+        image: 'attachments/2xhcog.png'
+    },
+    {
+        name: '1x Holo',
+        image: 'attachments/1xholo.png'
+    },
+    {
+        name: '1-2x Variable Holo',
+        image: 'attachments/1-2xholo.png'
+    },
+    {
+        name: '1x Digital Threat',
+        image: 'attachments/1xdigithreat.png'
+    }
+    ];
+
+    var optic = false;
+    document.getElementById("primaryAttH2").innerHTML = "";
+    document.getElementById("primaryAtt1").innerHTML = "";
+
+    if (attArr.includes(0)) {
+        optic = true;
+        ////console.log("Optics is true");
+    }
+
+    if (optic != false) {
+        var ranOptic = Math.floor(Math.random() * 5) + 0;
+
+        var opticPick = optics[ranOptic];
+        ////console.log(opticPick.name);
+        document.getElementById("primaryAttH2").innerHTML = "";
+        document.getElementById("primaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
+    }
+
+     //Mags
+
+    var mags = [{
+        name: 'Extended Heavy Mag Lvl 1',
+        image: 'attachments/heavy_mag.png'
+    },
+    {
+        name: 'Extended Heavy Mag Lvl 2',
+        image: 'attachments/heavy_mag.png'
+    },
+    {
+        name: 'Extended Heavy Mag Lvl 3',
+        image: 'attachments/heavy_mag.png'
+    }
+    ];
+
+    var mag = false;
+    document.getElementById("primaryAttH2").innerHTML = "";
+    document.getElementById("primaryAtt2").innerHTML = "";
+
+    if (attArr.includes(1)) {
+        mag = true;
+        ////console.log("Mags is true");
+    }
+
+    if (mag != false) {
+        var ranMag = Math.floor(Math.random() * 3) + 0;
+
+        var magPick = mags[ranMag];
+        ////console.log(magPick.name);
+        document.getElementById("primaryAttH2").innerHTML = "";
+        document.getElementById("primaryAtt2").innerHTML = '<b>' + "Mag - " + '</b>' + magPick.name + '<br>' + '<img style="width:50px;" src="' + magPick.image + '">';
+    }
+
+    //Stocks
+
+    var standardStocks = [{
+        name: 'Standard Stock Lvl 1',
+        image: 'attachments/stock.png'
+    },
+    {
+        name: 'Standard Stock Lvl 2',
+        image: 'attachments/stock.png'
+    },
+    {
+        name: 'Standard Stock Lvl 3',
+        image: 'attachments/stock.png' 
+    }
+    ];
+
+    var stock = false;
+    document.getElementById("primaryAttH2").innerHTML = "";
+    document.getElementById("primaryAtt3").innerHTML = "";
+
+    if (attArr.includes(2)) {
+        stock = true;
+        ////console.log("Stocks is true");
+    }
+
+    if (stock != false) {
+        var ranStock = Math.floor(Math.random() * 3) + 0;
+
+        var stockPick = standardStocks[ranStock];
+        ////console.log(magPick.name);
+        document.getElementById("primaryAttH2").innerHTML = "";
+        document.getElementById("primaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
+    }
+
+    document.getElementById("primaryAttH2").innerHTML = " ";
+    document.getElementById("primaryAtt4").innerHTML = " ";
+
+    //hop-ups
+
+    var hopUps = [{
+        name: 'Select Fire',
+        image:'attachments/selectfire.png'
+    }
+    ];
+
+    var hopUp = false;
+    document.getElementById("primaryAttH2").innerHTML = "";
+    document.getElementById("primaryAtt5").innerHTML = "";
+
+    if (attArr.includes(3)) {
+        hopUp = true;
+        ////console.log("HopUp is True");
+    }
+
+    if (hopUp != false) {
+        var ranHopUp = Math.floor(Math.random() * 1) + 0;
+
+        var hopUpPick = hopUps[ranHopUp];
+        ////console.log(hopUpPick.name);
+        document.getElementById("primaryAttH2").innerHTML = "";
+        document.getElementById("primaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+    }*/
 }
 
 function kraber() {

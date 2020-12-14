@@ -997,7 +997,7 @@ function alternatorSecond() {
     document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
-function prowlerSecond() {
+function r99Second() {
     var numAttachments = [0, 1, 2, 3];
     var totalCount = 4;
     var ran = Math.floor(Math.random() * 4) + 0;
@@ -1051,19 +1051,20 @@ function prowlerSecond() {
         document.getElementById("secondaryAtt1").innerHTML = '<b>' + "Optics - " + '</b>' + opticPick.name + '<br>' + '<img style="width:80px;" src="' + opticPick.image + '">';
     }
 
-     //Mags
 
-    var mags = [{
-        name: 'Extended Heavy Mag Lvl 1',
-        image: 'attachments/heavy_mag.png'
+    //Mags
+
+     var mags = [{
+        name: 'Extended Light Mag Lvl 1',
+        image: 'attachments/light_mag.png'
     },
     {
-        name: 'Extended Heavy Mag Lvl 2',
-        image: 'attachments/heavy_mag.png'
+        name: 'Extended Light Mag Lvl 2',
+        image: 'attachments/light_mag.png'
     },
     {
-        name: 'Extended Heavy Mag Lvl 3',
-        image: 'attachments/heavy_mag.png'
+        name: 'Extended Light Mag Lvl 3',
+        image: 'attachments/light_mag.png'
     }
     ];
 
@@ -1119,34 +1120,46 @@ function prowlerSecond() {
         document.getElementById("secondaryAtt3").innerHTML = '<b>' + "Stock - " + '</b>' + stockPick.name + '<br>' + '<img style="width:50px;" src="' + stockPick.image + '">';
     }
 
-    document.getElementById("secondaryAttH2").innerHTML = " ";
-    document.getElementById("secondaryAtt4").innerHTML = " ";
+    //Barrel Stabilizer
 
-    //hop-ups
-
-    var hopUps = [{
-        name: 'Select Fire',
-        image:'attachments/selectfire.png'
+    var barrelMods = [{
+        name: 'Barrel Stabilizer Lvl 1',
+        image: 'attachments/stabilizer.png'
+    },
+    {
+        name: 'Barrel Stabilizer Lvl 2',
+        image: 'attachments/stabilizer.png'
+    },
+    {
+        name: 'Barrel Stabilizer Lvl 3',
+        image: 'attachments/stabilizer.png'
+    },
+    {
+        name: 'Barrel Stabilizer Lvl 4',
+        image: 'attachments/stabilizer.png'
     }
     ];
 
-    var hopUp = false;
+    var barrelMod = false;
     document.getElementById("secondaryAttH2").innerHTML = "";
-    document.getElementById("secondaryAtt5").innerHTML = "";
+    document.getElementById("secondaryAtt4").innerHTML = "";
 
     if (attArr.includes(3)) {
-        hopUp = true;
-        ////console.log("HopUp is True");
+        barrelMod = true;
+        ////console.log("Optics is true");
     }
 
-    if (hopUp != false) {
-        var ranHopUp = Math.floor(Math.random() * 1) + 0;
+    if (barrelMod != false) {
+        var ranBarrel = Math.floor(Math.random() * 4) + 0;
 
-        var hopUpPick = hopUps[ranHopUp];
-        ////console.log(hopUpPick.name);
+        var barrelPick = barrelMods[ranBarrel];
+        ////console.log(opticPick.name);
         document.getElementById("secondaryAttH2").innerHTML = "";
-        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+        document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
+
+    document.getElementById("secondaryAttH2").innerHTML = " ";
+    document.getElementById("secondaryAtt5").innerHTML = " ";
 }
 
 function voltSecond() {
@@ -2729,9 +2742,9 @@ function mozambiqueSecond() {
 ////pistols
 
 function re45Second() {
-    var numAttachments = [0, 1, 2];
-    var totalCount = 3;
-    var ran = Math.floor(Math.random() * 3) + 0;
+    var numAttachments = [0, 1, 2, 3];
+    var totalCount = 4;
+    var ran = Math.floor(Math.random() * 4) + 0;
     var attArr = [];
     for (var i = 0; i <= ran; i++) {
         var rand = numAttachments[Math.floor(Math.random() * totalCount)];
@@ -2857,8 +2870,31 @@ function re45Second() {
         document.getElementById("secondaryAtt4").innerHTML = '<b>' + "Barrel Stabibilizer - " + '</b>' + barrelPick.name + '<br>' + '<img style="width:50px;" src="' + barrelPick.image + '">';
     }
 
-    document.getElementById("secondaryAttH2").innerHTML = " ";
-    document.getElementById("secondaryAtt5").innerHTML = " ";
+    //hop-ups
+
+    var hopUps = [{
+        name: 'Quickdraw Holster',
+        image: 'attachments/quickdraw.png'
+    }
+    ];
+
+    var hopUp = false;
+    document.getElementById("secondaryAttH2").innerHTML = "";
+    document.getElementById("secondaryAtt5").innerHTML = "";
+
+    if (attArr.includes(3)) {
+        hopUp = true;
+        ////console.log("HopUp is True");
+    }
+
+    if (hopUp != false) {
+        var ranHopUp = Math.floor(Math.random() * 1) + 0;
+
+        var hopUpPick = hopUps[ranHopUp];
+        ////console.log(hopUpPick.name);
+        document.getElementById("secondaryAttH2").innerHTML = "";
+        document.getElementById("secondaryAtt5").innerHTML = '<b>' + "Hop-Up - " + '</b>' + hopUpPick.name + '<br>' + '<img style="width:50px;" src="' + hopUpPick.image + '">';
+    }
 }
 
 function p2020Second() {
@@ -3081,6 +3117,10 @@ function wingmanSecond() {
     var hopUps = [{
         name: 'Skullpiercer',
         image: 'attachments/skullpiercer.png'
+    },
+    {
+        name: 'Quickdraw Holster',
+        image: 'attachments/quickdraw.png'
     }
     ];
 

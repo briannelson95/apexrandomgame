@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180540750-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-180540750-1');
+    </script>
+
+    <script>
+        function submitToAPI(e) {
+            e.preventDefault();
+            var URL = "https://dvvper8vi3.execute-api.us-east-1.amazonaws.com/contact";
+
+                var Namere = /[A-Za-z]{1}[A-Za-z]/;
+                if (!Namere.test($("#name-input").val())) {
+                         alert ("Name can not less than 2 char");
+                return;
+                }
+            
+                if ($("#email-input").val()=="") {
+                    alert ("Please enter your email id");
+                return;
+                }
+
+                var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+                if (!reeamil.test($("#email-input").val())) {
+                    alert ("Please enter valid email address");
+                return;
+                }
+
+            var name = $("#name-input").val();
+            var email = $("#email-input").val();
+            var desc = $("#description-input").val();
+            var data = {
+                name : name,
+                email : email,
+                desc : desc
+                };
+
+            $.ajax({
+                type: "POST",
+                url : "https://dvvper8vi3.execute-api.us-east-1.amazonaws.com/contact",
+                dataType: "json",
+                crossDomain: "true",
+                contentType: "application/json; charset=utf-8",
+                data: JSON.stringify(data),
+
+         
+            success: function () {
+           // clear form and show a success message
+                alert("Successfull");
+                    document.getElementById("contact-form").reset();
+            location.reload();
+            },
+            error: function () {
+            // show an error message
+            alert("UnSuccessfull");
+            }});
+     }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Apex Randomizer, an all in one random generator for Apex Legends. Updated for Season 7, Randomize weapons, attachemnts, legends and drop zones.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="apex, legends, randomizer, apex legends, apex legends randomizer, apex randomizer, random challenge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <!--Social Media-->
+        <meta property="og:title" content="Apex Randomizer">
+        <meta property="og:description" content="Randomize weapons, attachments, legends and drop zones.">
+        <meta property="og:image" content="social-preview.png">
+        <meta property="og:url" content="http://apexrandomizer.com/">
+        
+        <meta property="twitter:title" content="Apex Randomizer">
+        <meta property="twitter:description" content="Randomize weapons, attachments, legends and drop zones.">
+        <meta property="twitter:image" content="social-preview.png">
+        <meta property="twitter:card" content="summary_large_image">
+
+    <script src="index.js"></script>
+    <title>Apex Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html"><img class="logo" src="logo2.png" height="60px" alt="Apex Randomizer Logo"></a>
+            <nav>
+            </nav>
+            <a class="cta" href="contact.html"><button class="button4">Contact</button></a>
+          </header>
+
+<center>
+
+    <div class="card">
+    
+        <div id="para1">
+            <div class="col-1">
+            <h2>Contact Apex Randomizer</h2>
+                <p>Thanks for using Apex Randomizer. Do you have questions, comments, concerns, or ideas to make this generator even better? Please fill out the following information to contact me.</p>
+
+                <br>
+
+               
+                <strong>Email: </strong><a href="mailto:apexrandomizer@gmail.com" style="color: black;">apexrandomizer@gmail.com</a>
+                
+                
+            </div>
+
+        <div class="col-2">
+            <form id="contact-form" method="post">
+                <h4>Name:</h4>
+                <input type="text" style="height:35px;" id="name-input" placeholder="Enter name here…" class="form-control"/>
+
+                <h4>Email:</h4>
+                <input type="text" style="height:35px;" id="email-input" placeholder="Enter email here…" class="form-control"/>
+
+                <h4>How can we help you?</h4>
+                <textarea id="description-input" rows="3" placeholder="Enter your message…" class="form-control"></textarea>
+
+                <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+                <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
+            </form>
+        </div>
+        </div>
+    <div class="row">
+    </div>
+    </div>
+    
+        
+    </div>
+    </div>  
+</center>
+
+    </body>
+
+</html>
